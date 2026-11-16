@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador | Sushi Luna</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="menu">
+        <a href="inicio.html">Início</a>
+        <a href="login.html">Entrar</a>
+        <a href="index.html">Cadastrar-se</a>
+    </nav>
+
+    <p class="marca"><span class="kanji">鮨</span>SUSHI LUNA</p>
+
+    <main class="formulario">
+        <h1>Administrador</h1>
+
+        <label for="usuario">Usuário:</label>
+        <input type="text" id="usuario" placeholder="Usuário do administrador">
+
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" placeholder="Senha do administrador">
+
+        <p id="erro" class="erro"></p>
+
+        <div class="botoes">
+            <button type="button" onclick="entrarAdmin()">Entrar</button>
+        </div>
+    </main>
+
+    <script src="admin-login.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrar | Sushi Luna</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="menu">
+        <a href="index.html">Início</a>
+        
+        <a href="post.html">Cadastrar-se</a>
+    </nav>
+
+    <p class="marca"><span class="kanji">鮨</span>SUSHI LUNA</p>
+
+    <main class="formulario">
+        <h1>Área do Cliente</h1>
+
+        <label for="cpfLogin">CPF:</label>
+        <input type="text" id="cpfLogin" placeholder="Digite o seu CPF" maxlength="11">
+
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" placeholder="Digite a senha">
+
+        <p id="erro" class="erro"></p>
+
+        <div class="botoes">
+            <button type="button" onclick="entrar()">Entrar</button>
+        </div>
+
+        <p class="link-extra">Ainda não tem conta? <a href="index.html">Cadastre-se</a></p>
+        <p class="link-extra"><a href="admin-login.html">Sou administrador</a></p>
+    </main>
+
+    <script src="login.js"></script>
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sushi Luna | Culinária Japonesa</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body.inicio {
+            background: radial-gradient(circle at center, #101827 0%, #070b13 50%, #02040a 100%);
+        }
+
+        /* Duas colunas: texto à esquerda, foto à direita */
+        body.inicio .banner {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 50px;
+            width: 100%;
+            max-width: 1000px;
+            min-height: 60vh;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        body.inicio .banner-conteudo {
+            text-align: left;
+        }
+
+        body.inicio .banner-conteudo h1 {
+            font-size: 38px;
+            line-height: 1.3;
+            letter-spacing: 3px;
+            text-align: left;
+        }
+
+        body.inicio .banner-conteudo h1::after {
+            margin: 14px 0 0;
+        }
+
+        body.inicio .banner-texto {
+            max-width: 480px;
+            margin: 0 0 30px;
+            color: #d5dff0;
+            font-size: 16px;
+            line-height: 1.7;
+        }
+
+        body.inicio .banner-botoes {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        body.inicio .banner-imagem img {
+            display: block;
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            border-radius: 12px;
+            border: 1px solid #293b58;
+            box-shadow: 0 0 30px #b3262e33, 0 0 60px #547bbd22;
+        }
+
+        .btn-link {
+            display: inline-block;
+            min-width: 170px;
+            padding: 14px 24px;
+            text-align: center;
+            color: #edf3ff;
+            font-size: 13px;
+            letter-spacing: 3px;
+            border: 1px solid #627da7;
+            border-radius: 7px;
+            background: rgba(20, 35, 59, 0.7);
+            transition: 0.3s;
+        }
+
+        .btn-link:hover {
+            background: #405b83;
+            color: #fff;
+            transform: translateY(-3px);
+        }
+
+        .btn-destaque {
+            background: #b3262e;
+            border-color: #d4545b;
+        }
+
+        .btn-destaque:hover {
+            background: #8f1d24;
+        }
+
+        body.inicio .sobre {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 18px;
+            width: 100%;
+            max-width: 1000px;
+            margin: 40px auto;
+        }
+
+        .sobre-card {
+            padding: 22px;
+            background: rgba(12, 20, 34, 0.8);
+            border: 1px solid #293b58;
+            border-radius: 7px;
+            text-align: center;
+        }
+
+        .sobre-card h3 {
+            font-size: 15px;
+            font-weight: 500;
+            letter-spacing: 2px;
+            color: #f0f4ff;
+            margin-bottom: 8px;
+        }
+
+        .sobre-card p {
+            font-size: 13px;
+            line-height: 1.6;
+            color: #a9bbd8;
+        }
+
+        .rodape {
+            margin-top: 20px;
+            font-size: 12px;
+            letter-spacing: 2px;
+            color: #7f93b5;
+        }
+
+        /* Celular: uma coluna */
+        @media (max-width: 700px) {
+            body.inicio .banner {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            body.inicio .banner-conteudo,
+            body.inicio .banner-conteudo h1 {
+                text-align: center;
+            }
+
+            body.inicio .banner-conteudo h1::after {
+                margin: 14px auto 0;
+            }
+
+            body.inicio .banner-texto {
+                margin: 0 auto 30px;
+            }
+
+            body.inicio .banner-botoes {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body class="inicio">
+
+    
+
+    <header class="banner">
+
+        <div class="banner-conteudo">
+            <p class="marca"><span class="kanji">鮨</span>SUSHI LUNA</p>
+            <h1>Sabores do Japão<br>sob a luz da lua</h1>
+            <p class="banner-texto">
+                Sushis, sashimis e pratos quentes preparados com ingredientes frescos
+                e muito carinho. Cadastre-se para conhecer o nosso cardápio.
+            </p>
+
+            <div class="banner-botoes">
+                <a href="login.html" class="btn-link">Entrar</a>
+                <a href="post.html" class="btn-link btn-destaque">Cadastrar-se</a>
+            </div>
+        </div>
+
+        <div class="banner-imagem">
+            <img src="images.jpg" alt="Onigiris em formato de panda">
+        </div>
+
+    </header>
+
+    <section class="sobre">
+        <div class="sobre-card">
+            <h3>Ingredientes frescos</h3>
+            <p>Peixes e insumos selecionados todos os dias.</p>
+        </div>
+        <div class="sobre-card">
+            <h3>Feito com cuidado</h3>
+            <p>Cada prato é montado com atenção aos detalhes.</p>
+        </div>
+        <div class="sobre-card">
+            <h3>Área do cliente</h3>
+            <p>Cadastre-se para acessar o cardápio completo.</p>
+        </div>
+    </section>
+
+    <footer class="rodape">
+        © Sushi Luna · Culinária Japonesa · <a href="admin-login.html">Administrador</a>
+    </footer>
+
+</body>
+</html>
